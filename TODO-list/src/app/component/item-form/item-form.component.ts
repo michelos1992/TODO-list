@@ -17,11 +17,13 @@ export class ItemFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  addItem(newTitle: HTMLInputElement, newDescription: HTMLInputElement, newId: HTMLInputElement) {
+  addItem(idItem: HTMLInputElement, newTitle: HTMLInputElement, newDescription: HTMLInputElement, newId: HTMLInputElement) {
     this.itemListService.addItem({
+      id: idItem.valueAsNumber,
       title: newTitle.value,
       description: newDescription.value,
-      hide: true
+      hide: true,
+      checked: false
     });
     newTitle.value = '';
     newDescription.value = '';

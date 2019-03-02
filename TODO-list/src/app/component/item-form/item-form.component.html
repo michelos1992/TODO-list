@@ -1,9 +1,9 @@
 <div class="card">
   <div class="card-body">
-    <form (submit)="addItem(newTitle, newDescription)">
+    <form (submit)="addItem(idItem, newTitle, newDescription)">
       <div class="form-group">
+        <input type="number" placeholder="Id Item" #idItem class="form-control">
         <input type="text" placeholder="Task Title" #newTitle class="form-control">
-        <input type="text" placeholder="item id" #newId class="form-control">
       </div>
       <div class="form-group">
         <textarea #newDescription cols="30" rows="10" class="form-control" placeholder="Item Description"></textarea>
