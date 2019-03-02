@@ -28,6 +28,7 @@ export class ItemComponent implements OnInit {
 
   onCheckboxChange(option, event) {
     if (event.target.checked) {
+      debugger;
       for (let i = 0 ; i < this.items.length; i++) {
         if (this.items[i] === option.id) {
           this.items[i].checked = event.target.checked;
