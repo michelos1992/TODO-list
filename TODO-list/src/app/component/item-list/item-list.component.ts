@@ -40,6 +40,14 @@ export class ItemListComponent implements OnInit {
           this.items[i].checked = event.target.checked;
         }
       }
+      this.itemListService.updateItems(this.items);
+    } else {
+      for (let i = 0 ; i < this.items.length; i++) {
+        if (this.items[i] === option.id) {
+          this.items[i].checked = event.target.checked;
+        }
+      }
+      this.itemListService.updateItems(this.items);
     }
   }
 }
