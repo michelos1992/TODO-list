@@ -1,4 +1,3 @@
-import { ItemComponent } from './component/item/item.component';
 import { ItemFormComponent } from './component/item-form/item-form.component';
 import { ItemListComponent } from './component/item-list/item-list.component';
 import { ItemListService } from './services/item-list.service';
@@ -15,8 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     ItemListComponent,
-    ItemFormComponent,
-    ItemComponent
+    ItemFormComponent
   ],
   imports: [
     BrowserModule,
